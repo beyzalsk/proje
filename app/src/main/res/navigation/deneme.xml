@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/deneme"
+    app:startDestination="@id/listeFragment2">
+
+    <fragment
+        android:id="@+id/listeFragment2"
+        android:name="com.beyzalsk.yemektarifleri.view.ListeFragment"
+        android:label="ListeFragment" >
+        <action
+            android:id="@+id/action_listeFragment2_to_tarifFragment2"
+            app:destination="@id/tarifFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/tarifFragment2"
+        android:name="com.beyzalsk.yemektarifleri.view.TarifFragment"
+        android:label="fragment_tarif"
+        tools:layout="@layout/fragment_tarif" >
+        <action
+            android:id="@+id/action_tarifFragment2_to_listeFragment2"
+            app:destination="@id/listeFragment2" />
+    </fragment>
+</navigation>
